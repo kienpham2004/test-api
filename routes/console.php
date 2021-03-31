@@ -15,5 +15,22 @@ use Illuminate\Support\Facades\Artisan;
 */
 
 Artisan::command('inspire', function () {
-    $this->comment(Inspiring::quote());
+    // $this->comment(Inspiring::quote());
+
+    /*$a = new stdClass();
+
+    $c = clone $a; // tham trị
+    $c = $a; // tham chiếu
+
+    $c->test = 'ref';*/
+
+    $b = 1;
+
+    $c = &$b; // tham chiếu
+    $c = $b; // tham trị
+
+    $c = 2;
+
+    dd($b, $c);
+
 })->describe('Display an inspiring quote');

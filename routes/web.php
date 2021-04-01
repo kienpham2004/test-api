@@ -22,3 +22,4 @@ Route::get('getAllStudent', 'Api\ApiController@getAllStudents');
 Route::get('getStudent/{id}', 'Api\ApiController@getStudent');
 Route::get('getpost', 'PostController@getpost');
 Route::get('addPost', 'PostController@addPost');
+Route::get('getalldata', 'PostController@getall');
